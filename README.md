@@ -70,7 +70,7 @@ Ajouter un bouton à chaque livre pour envoyer une requête `PUT` à l’API et 
 - Ajouter un champ `Genre` dans le modèle `Book` + menu déroulant pour filtrer
 - Afficher un compteur : "X livres lus sur Y"
 
---
+---
 
 ## ✅ Livrable attendu
 
