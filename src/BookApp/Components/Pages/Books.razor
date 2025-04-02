@@ -1,0 +1,39 @@
+@page "/books"
+@inject HttpClient Http
+@using BookApp.Models
+
+<h3>Ma bibliothèque 📚</h3>
+
+<ul>
+    <li>
+        <strong>Titre</strong> par Auteur
+        <span style="color: green;"> (lu)</span>
+        <button class="btn btn-sm btn-primary" @onclick="() => MarkAsRead()">Marquer comme lu</button>
+    </li>
+</ul>
+
+<hr />
+
+<h4>Ajouter un livre</h4>
+<EditForm OnValidSubmit="AddBook">
+    <InputText placeholder="Titre" class="form-control mb-2" />
+    <InputText placeholder="Auteur" class="form-control mb-2" />
+    <button type="submit" class="btn btn-success">Ajouter</button>
+</EditForm>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        throw new NotImplementedException("OnInitializedAsync method is not implemented yet.");
+    }
+
+    private async Task AddBook()
+    {
+        throw new NotImplementedException("AddBook method is not implemented yet.");
+    }
+
+    private async Task MarkAsRead()
+    {
+        throw new NotImplementedException("MarkAsRead method is not implemented yet.");
+    }
+}

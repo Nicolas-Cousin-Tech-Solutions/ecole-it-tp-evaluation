@@ -1,0 +1,28 @@
+@page "/users"
+
+<h2>Utilisateurs</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h4>Livre</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Emprunteur</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Date d'emprunt</h4>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="col-sm">
+            Lorem ipsum
+        </div>
+        <div class="col-sm">
+            @DateOnly.FromDateTime(DateTime.Now).ToString("dd/MM/yyyy")
+        </div>
+    </div>
+</div>

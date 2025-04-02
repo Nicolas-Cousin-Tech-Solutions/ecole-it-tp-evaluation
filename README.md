@@ -6,6 +6,7 @@ Créer une application complète (API + Front) pour gérer une bibliothèque per
 - Ajouter de nouveaux livres via un formulaire
 - Afficher les livres existants
 - Marquer un livre comme "lu"
+- Ajouter l'emprunt d'un livre par un utilisateur (facultatif)
 - Bonus : filtrer ou styliser les livres selon leur statut
 
 ---
@@ -16,23 +17,25 @@ Créer une application complète (API + Front) pour gérer une bibliothèque per
 
 ### 1.1. Modèle `Book`
 
-Compléter le fichier `Models/Book.cs` avec la structure suivante :
+Compléter le fichier `Models/Book.cs` avec les informations suivantes :
 
-```csharp
-public class Book
-{
-    public int Id { get; set; }
-    public string Title { get; set; } = string.Empty;
-    public string Author { get; set; } = string.Empty;
-    public bool IsRead { get; set; } = false;
-}
-```
+- L'id du livre
+- Le titre du livre
+- L'auteur du livre
+- Le statut de lecture
 
 ### 1.1. Routes à implémenter dans `Program.cs`
 
-- `GET /books` → retourne la liste des livres
-- `POST /books` → ajoute un nouveau livre
-- `PUT /books/{id}` → met à jour la propriété `IsRead` à `true`
+Compléter le fichier `Program.cs` pour gérer les routes suivantes :
+
+- la liste des livres
+- l'ajout d'un livre
+- la mise à jour du statut de lecture d'un livre
+
+- la suppression d'un livre (facultatif)
+- la recherche d'un livre par titre (facultatif)
+- la recherche d'un livre par auteur (facultatif)
+- la recherche d'un livre par statut (facultatif)
 
 > La base de données est en mémoire (`InMemory`) via Entity Framework Core.
 
